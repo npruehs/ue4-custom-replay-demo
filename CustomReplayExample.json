@@ -1,0 +1,14 @@
+{
+    "Frames": [
+        {
+            "Units": [
+                {
+                    "Id": "1",
+                    "LocationX": 30,
+                    "LocationY": 40,
+                    "LocationZ": 50
+                }
+            ]
+        }
+    ]
+}
