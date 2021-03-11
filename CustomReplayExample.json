@@ -9,6 +9,36 @@
                     "LocationZ": 50
                 }
             ]
+        },
+        {
+            "Units": [
+                {
+                    "Id": "1",
+                    "LocationX": 60,
+                    "LocationY": 70,
+                    "LocationZ": 50
+                }
+            ]
+        },
+        {
+            "Units": [
+                {
+                    "Id": "1",
+                    "LocationX": 90,
+                    "LocationY": 100,
+                    "LocationZ": 50
+                }
+            ]
+        },
+        {
+            "Units": [
+                {
+                    "Id": "1",
+                    "LocationX": 120,
+                    "LocationY": 130,
+                    "LocationZ": 50
+                }
+            ]
         }
     ]
 }
