@@ -3,4 +3,4 @@
 #include "CustomReplayDemo.h"
 #include "Modules/ModuleManager.h"
 
-IMPLEMENT_PRIMARY_GAME_MODULE( FDefaultGameModuleImpl, CustomReplayDemo, "CustomReplayDemo" );
+IMPLEMENT_PRIMARY_GAME_MODULE(FDefaultGameModuleImpl, CustomReplayDemo, "CustomReplayDemo");
