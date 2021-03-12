@@ -21,6 +21,9 @@ void ACRDGameModeBase::InitGame(const FString& MapName, const FString& Options, 
     // Parse JSON.
     FString ReplayJsonString;
     FFileHelper::LoadFileToString(ReplayJsonString, *ReplayPath);
+    
+    UE_LOG(LogCRD, Log, TEXT("%s"), *ReplayJsonString);
+
     FJsonObjectConverter::JsonObjectStringToUStruct<FCRDCustomReplay>(ReplayJsonString, &Replay, 0, 0);
 
     UE_LOG(LogCRD, Log, TEXT("Successfully parsed custom replay file %s"), *ReplayPath);
@@ -72,6 +75,7 @@ void ACRDGameModeBase::ApplyReplayFrame(int32 NewReplayFrame)
         if (!IsValid(Unit))
         {
             // We've never seen that unit before.
+            // TODO: Unit might also have been destroyed in the meantime! We have to take care of that.
             // Pragmatic approach: Just lazily spawn new actor for the unit.
             Unit = GetWorld()->SpawnActor(UnitActorClass);
             Units.Add(ReplayUnit.Id, Unit);
